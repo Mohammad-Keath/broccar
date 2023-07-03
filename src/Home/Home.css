@@ -1,0 +1,87 @@
+/* @keyframes example{
+    0%{
+      transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-100vw);
+    }
+    50%{
+        transform: translateX(-200vw);
+    }
+    75%{
+        transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+  
+ } */
+
+.images{
+    height: 80vh;
+    width: 100vw;
+    display: block;
+    /* z-index: -1; */
+    /* margin-left: 10vw; */
+    /* margin-right: 10vw; */
+}
+.bigImage{
+    /* position: relative; */
+    display: flex;
+    z-index: 2;
+    /* overflow: hidden; */
+    /* transform: translateX(-200vw); */
+    
+   
+    /* animation: example 20s infinite ease; */
+}
+.arrow{
+    height: 7vh;
+    position: absolute;
+    top: 35vh;
+    /* left: 0;   */
+    cursor: pointer;
+    z-index: 4;
+}
+.arrowr{
+    right:0;
+}
+.image1,.image2,.image3{
+   width: 0vw;
+   /* right: 0; */
+   transition:all 1s ease-in-out;
+
+
+}
+#showthis{
+   width:100vw;
+   transition:all 1s ease-in-out;
+}
+
+/* .bigImage{
+    margin-top:-25px ;
+ background-image: url(../assets/home.jpg);
+
+ animation: example 10s infinite ease-in-out;
+ transition: all 1.5s ease-in-out;
+ height:35em;
+ background-position: center;
+ background-size: cover;
+ padding-top:5em ;
+} */
+.titles{
+    text-align: left;
+    padding: 30px;
+    /* padding-top: 100px; */
+    font-size: 30px;
+    text-shadow: 4px 4px 5px black;
+    color: white;
+}
+
+.blurBack{
+    position: absolute;
+    top: 50vh;
+    width: 100%;
+   
+    background-color: rgba(0,0,0, 0.4);
+}
